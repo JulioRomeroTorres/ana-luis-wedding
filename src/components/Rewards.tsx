@@ -1,3 +1,9 @@
 export const Rewards = () => {
-  return <h1>Hola</h1>
+  
+  return (
+    <div>
+      <h1>Obsequios</h1>
+      <h1>{`Si gustas nos puedes yapear ;)`}</h1>
+    </div>
+  )
 }

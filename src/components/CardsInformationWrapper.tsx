@@ -12,8 +12,8 @@ export const InfoCards = () => {
       title: "Ceremonia",
       type: "location",
       icon: <FaRing  />,
-      desktopUrl: "",
-      mobileUrl: "",
+      desktopUrl: "https://www.google.com/maps?rlz=1C1ONGR_esPE1087PE1087&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBjc1ajBqN6gCALACAA&um=1&ie=UTF-8&fb=1&gl=pe&sa=X&geocode=Kd1h2yO3yAWRMdJxNoHoJtKf&daddr=Jr.+Az%C3%A1ngaro+451,+Lima+15001",
+      mobileUrl: "https://www.google.com/maps?rlz=1C1ONGR_esPE1087PE1087&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBjc1ajBqN6gCALACAA&um=1&ie=UTF-8&fb=1&gl=pe&sa=X&geocode=Kd1h2yO3yAWRMdJxNoHoJtKf&daddr=Jr.+Az%C3%A1ngaro+451,+Lima+15001",
       informationList: [
         {
           icon: <FaMapMarkerAlt />,
@@ -29,8 +29,8 @@ export const InfoCards = () => {
       title: "Fiesta",
       type: "location",
       icon: <GiPartyPopper />,
-      desktopUrl: "",
-      mobileUrl: "",
+      desktopUrl: "https://www.google.com/maps/dir//Avenida+Los+Laureles+Mz.+K+lote+4,+Lurigancho-Chosica+15400/@-12.0120337,-77.0114524,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9105c581dad53c4d:0x6e440108ed545241!2m2!1d-76.9290505!2d-12.0120458?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D",
+      mobileUrl: "https://www.google.com/maps/dir//Avenida+Los+Laureles+Mz.+K+lote+4,+Lurigancho-Chosica+15400/@-12.0120337,-77.0114524,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9105c581dad53c4d:0x6e440108ed545241!2m2!1d-76.9290505!2d-12.0120458?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D",
       informationList: [
         {
           icon: <FaMapMarkerAlt />,

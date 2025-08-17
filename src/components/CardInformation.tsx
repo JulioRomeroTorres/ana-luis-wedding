@@ -22,7 +22,7 @@ const handleMapClick = ({ desktopUrl, mobileUrl }: MapLinkProps) => {
 
 export const CardInforation: React.FC<CardInforationProps> = (args: CardInforationProps ) => {
   const { title, type, informationList, icon, desktopUrl, mobileUrl } = args;
-  const isLocation = title === "location";
+  const isLocation = type === "location";
 
   return (
     <div 

@@ -1,3 +1,16 @@
 export const CouplePhoto = () => {
-    return <h1>Hola</h1>
+  
+  const [ couplePhoto ] = Object.values(
+    import.meta.glob(`/src/assets/photos/CouplePhoto.jpg`, {
+      query: '?url',
+      import: 'default',
+      eager: true
+    })
+  ) as string[];
+
+  return (
+    <div className="couple-photo" >
+      <img src = {couplePhoto} alt = "couple-photo-ana-luis" />
+    </div>
+  ) 
 }

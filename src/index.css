@@ -306,8 +306,63 @@ body {
 }
 
 
+.info-button {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .info-button:hover {
-  background-color: #A47864;
+  background-color: var(--color-primary);
+  color: var(--color-background); 
+  border-color: var(--color-primary);
+}
+
+
+.couple-photo {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto; 
+  overflow: hidden;
+  border-radius: 16px;
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+.couple-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+}
+
+.couple-photo::before,
+.couple-photo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.couple-photo::before {
+  top: 0;
+  background: linear-gradient(to bottom, var(--color-background), transparent);
+}
+
+.couple-photo::after {
+  bottom: 0;
+  background: linear-gradient(to top, var(--color-background), transparent);
 }
 
 a {

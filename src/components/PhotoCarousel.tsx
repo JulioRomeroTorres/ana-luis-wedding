@@ -20,8 +20,6 @@ export const PhotoCarousel: React.FC = () => {
       });
   };
 
-
-
   const imageList = Object.values(
     import.meta.glob(`/src/assets/photos/carrousel/Photo_*.jpg`, {
       query: '?url',
