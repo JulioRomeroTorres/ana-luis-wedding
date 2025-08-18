@@ -24,7 +24,10 @@ Mi número de cuenta BCP Soles es 5154083434026.
 Mi número de cuenta interbancaria es 00251500408343402653.
 `
 
-export const YAPE_PHONE_NUMBER = `979040974`
+
+export const PERUVIN_PREFIX = "51";
+
+export const YAPE_PHONE_NUMBER = `979040974`;
 
 export const WEDDING_DAY_STRING = `SÁBADO OCTUBRE`;
 
@@ -36,3 +39,5 @@ export const MAPPER_DATETIME_UNITS = {
 }
 
 export const DATETIME_UNITS = Object.keys(MAPPER_DATETIME_UNITS);
+
+export const DEFAULT_MESSAGE = "Urgente, necesito detalles de la boda, me muerooo"

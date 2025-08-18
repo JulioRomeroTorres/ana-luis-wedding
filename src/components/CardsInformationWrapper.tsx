@@ -4,6 +4,8 @@ import { FaMapMarkerAlt, FaClock, FaRing } from "react-icons/fa";
 import { GiPartyPopper } from "react-icons/gi";
 import { FaMale, FaFemale } from "react-icons/fa";
 import { FaPersonHalfDress } from "react-icons/fa6";
+import { BiChurch } from "react-icons/bi";
+
 
 export const InfoCards = () => {
   
@@ -11,7 +13,7 @@ export const InfoCards = () => {
     {
       title: "Ceremonia",
       type: "location",
-      icon: <FaRing  />,
+      icon: <BiChurch  />,
       desktopUrl: "https://www.google.com/maps?rlz=1C1ONGR_esPE1087PE1087&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBjc1ajBqN6gCALACAA&um=1&ie=UTF-8&fb=1&gl=pe&sa=X&geocode=Kd1h2yO3yAWRMdJxNoHoJtKf&daddr=Jr.+Az%C3%A1ngaro+451,+Lima+15001",
       mobileUrl: "https://www.google.com/maps?rlz=1C1ONGR_esPE1087PE1087&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBjc1ajBqN6gCALACAA&um=1&ie=UTF-8&fb=1&gl=pe&sa=X&geocode=Kd1h2yO3yAWRMdJxNoHoJtKf&daddr=Jr.+Az%C3%A1ngaro+451,+Lima+15001",
       informationList: [

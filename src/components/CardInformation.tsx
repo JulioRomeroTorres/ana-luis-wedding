@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import type { CardInforationProps } from "../lib/entities/CardInforationProps";
 
 export interface MapLinkProps {
@@ -20,9 +20,20 @@ const handleMapClick = ({ desktopUrl, mobileUrl }: MapLinkProps) => {
   window.open(urlToOpen, '_blank');
 };
 
+const openPopup = () => {
+  
+}
+
 export const CardInforation: React.FC<CardInforationProps> = (args: CardInforationProps ) => {
   const { title, type, informationList, icon, desktopUrl, mobileUrl } = args;
+  
   const isLocation = type === "location";
+  const isDressCode = type === "dressCode";
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openPopup = () => setIsOpen(true);
+  const closePopup = () => setIsOpen(false);
 
   return (
     <div 
@@ -48,6 +59,38 @@ export const CardInforation: React.FC<CardInforationProps> = (args: CardInforati
           Ver referencia
         </button>
       )}
+
+      {
+        isDressCode && (
+          <button className="open-popup-button" onClick={openPopup}>
+            Ver Dress Code
+          </button>
+        )
+      }
+
+      {
+        isOpen && (
+          <div className="popup-overlay" onClick={closePopup}>
+            <div className="popup-content" onClick={e => e.stopPropagation()}>
+              <h2>Dress Code</h2>
+              <div className="dress-images">
+                <div className="dress-item">
+                  <img src="./vite.svg" alt="Vestimenta Hombre" />
+                  <p>Evitar blanco</p>
+                </div>
+                <div className="dress-item">
+                  <img src="./vite.svg" alt="Vestimenta Mujer" />
+                  <p>Evitar beige</p>
+                </div>
+              </div>
+              <button className="close-popup-button" onClick={closePopup}>
+                x
+              </button>
+            </div>
+        </div>
+
+        )
+      }
 
     </div>
   );
