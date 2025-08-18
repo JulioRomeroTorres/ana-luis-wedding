@@ -51,3 +51,10 @@ export const DEFAULT_FORM_DATA = {
   attendingParty: false,
   attendingBoth: false
 }
+
+
+export const DEFAULT_WEDDING_EVENT_INFORMATION = {
+  text: 'Nuestra Boda',
+  details: 'Ven a celebrar con nosotros nuestro día especial!',
+  location: 'Plaza Principal, Ciudad Ejemplo'
+};
