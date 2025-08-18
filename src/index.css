@@ -523,6 +523,57 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
+
+.attendance-form {
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  color: #A47864; 
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+}
+
+.form-group.full-width {
+  flex: 1 1 100%;
+}
+
+label {
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #A47864; 
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 0.5rem 0.75rem;
+  border: 1.5px solid #C3A78F;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #5A3E2B; 
+  background-color: #F7EFE8; 
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #A47864;
+  background-color: #fff;
+}
+
+
 .switch-wrapper {
   display: flex;
   align-items: center;

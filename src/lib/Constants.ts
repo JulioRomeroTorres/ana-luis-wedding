@@ -1,11 +1,11 @@
 export const WEDDING_DAY = "2025-10-25T18:00:00";
 export const DEFAULT_HEADERS = {
-                                  "Content-Type": "application/json"
+                                  "Content-Type": "text/plain"
                                 }
 
 export const ENDPOINT_DIRECTORY = {
   EXCEL: {
-    BASE_URL: "https://script.google.com/macros/s/AKfycbx74r3dLm13n6kqQEn85qOAg-baXbUa1oFxTlylWAJIO-5NQeqfkt-IMn5tRN7_srTt/exec",
+    BASE_URL: "https://script.google.com/macros/s/AKfycbzwdx7XIdwm2euyYJ929hh8vWKlnF8W1cBL4OE7xEoJEswF1gYfysBG4y1-2L0cvphCNA/exec",
     ENDPOINTS: []
   }
 }

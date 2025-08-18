@@ -16,7 +16,7 @@ export class HttpClient {
 	async post(endPoint: string, payload: any): Promise<any> {
 		try {
 			const totalUrl =  endPoint ? `${this.baseUrl}/${endPoint}` : this.baseUrl;
-
+			console.log("HttpClient", JSON.stringify({payload}))
 			const response = await fetch( totalUrl, {
 				method: "POST",
 				body: JSON.stringify(payload),
@@ -36,20 +36,34 @@ export class HttpClient {
 			throw new Error(`Error to post method ${error}`);
 		}
 	}
+
+	async handleSubmit(){    
+		const BASE_URL = "https://script.google.com/macros/s/AKfycbzwdx7XIdwm2euyYJ929hh8vWKlnF8W1cBL4OE7xEoJEswF1gYfysBG4y1-2L0cvphCNA/exec"
+	const data = {
+		"attendingCeremony":true,
+		"attendingParty":false,
+		"attendingBoth":false,
+		"lastName":"Romero Torreddcdscsddd",
+		"firstName":"Juliodff",
+		"email":"jcromerot@uni.pedddddddccddddd"
+	};
+
+	try {
+		const response = await fetch( BASE_URL, {
+		method: "POST",
+		redirect: "follow",
+		body: JSON.stringify(data),
+		headers: { "Content-Type": "text/plain" }
+		});
+		console.log("response ", response)
+		if (response.ok) {
+		console.log("¡Confirmado! Gracias por responder.");
+		} else {
+		console.log("Hubo un error. Intenta de nuevo.");
+		}
+	} catch (error) {
+		console.log("Error",error)
+		console.log("Error de conexión.");
+	}
+	};
 }
-
-
-const handleSubmit = async () => {    
-  
-  const data = {
-    name: "Julio",
-    lastName: "Romero",
-    relationship: "Amigo",
-    numberOfCompanios: 0,
-    email: "jcromerot@uni.pe",
-    hadAttended: true
-  };
-
-  
-};
-await handleSubmit()

@@ -8,7 +8,7 @@ import type { SwitchAttendanceProps } from "../lib/entities/SwitchAttendanceProp
 export const ConfirmAttendence = ({onClose}: ConfirmAttendenceProps) => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [_, setSubmitSuccess] = useState(false);
 
   const [formData, setFormData] = useState(DEFAULT_FORM_DATA);
 
@@ -19,10 +19,13 @@ export const ConfirmAttendence = ({onClose}: ConfirmAttendenceProps) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value, type, checked } = e.target;
     console.log("AJaaa", { name, value, type, checked })
-    setFormData((prev) => ({
+    setFormData((prev) => {
+      console.log("previous", {prev})
+      return {
       ...prev,
       [name]: type === "checkbox" ? checked : value,
-    }));
+    }
+    });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -31,6 +34,9 @@ export const ConfirmAttendence = ({onClose}: ConfirmAttendenceProps) => {
     setSubmitSuccess(false);
 
     try {
+      
+
+
       const rersponseHttpClient = await httpClient.post("", formData)
       console.log(`Response HttpClient ${rersponseHttpClient}`);
 
@@ -46,12 +52,21 @@ export const ConfirmAttendence = ({onClose}: ConfirmAttendenceProps) => {
     }
   };
 
+  const setWithPreviousValue = (value: any) => {
+    setFormData((prev) => {
+      return {
+      ...prev,
+      ...value
+      }
+    })
+  }
+
 
   const listSwitchAttendace: SwitchAttendanceProps[] = [
     {
       title: "Asistiré a la ceremonia",
       checkedValue: formData.attendingCeremony, 
-      voidFunction: setFormData,
+      voidFunction: setWithPreviousValue,
       valueFormData: {
         attendingCeremony: true,
         attendingParty: false,
@@ -62,7 +77,7 @@ export const ConfirmAttendence = ({onClose}: ConfirmAttendenceProps) => {
     {
       title: "Asistiré a la fiesta",
       checkedValue: formData.attendingParty, 
-      voidFunction: setFormData,
+      voidFunction: setWithPreviousValue,
       valueFormData: {
         attendingCeremony: false,
         attendingParty: true,
@@ -73,7 +88,7 @@ export const ConfirmAttendence = ({onClose}: ConfirmAttendenceProps) => {
     {
       title: "Asistiré a la Ambos (Terrible lo que pasara)",
       checkedValue: formData.attendingBoth, 
-      voidFunction: setFormData,
+      voidFunction: setWithPreviousValue,
       valueFormData: {
         attendingCeremony: false,
         attendingParty: false,
@@ -87,32 +102,49 @@ export const ConfirmAttendence = ({onClose}: ConfirmAttendenceProps) => {
     <div className="attendance-container">
       <h2>Confirmar Asistencia</h2>
       <form onSubmit={handleSubmit} className="attendance-form">
-        <input
-          type="text"
-          name="firstName"
-          placeholder="Nombres"
-          value={formData.firstName}
-          onChange={handleChange}
-          required
-        />
 
-        <input
-          type="text"
-          name="lastName"
-          placeholder="Apellidos"
-          value={formData.lastName}
-          onChange={handleChange}
-          required
-        />
+        <div className="form-row">
+          <div className="form-group">
+            <label htmlFor="firstName">Nombres</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Nombres"
+              value={formData.firstName}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Correo electrónico"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
+          <div className="form-group">
+            <label htmlFor="lastName">Apellidos</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Apellidos"
+              value={formData.lastName}
+              onChange={handleChange}
+              required
+            />
+          </div>
+        </div>
+
+        <div className="form-row">
+          <div className="form-group full-width">
+            <label htmlFor="email">Correo electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Correo electrónico"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+        </div>
 
         {
           listSwitchAttendace.map( (switchAttendaceComponent, index) => {
