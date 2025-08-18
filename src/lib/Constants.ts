@@ -3,7 +3,7 @@ export const DEFAULT_HEADERS = {
                                   "Content-Type": "application/json"
                                 }
 
-export const ENDPOINT_DIRECTORY: Record<string, any> = {
+export const ENDPOINT_DIRECTORY = {
   EXCEL: {
     BASE_URL: "https://script.google.com/macros/s/AKfycbx74r3dLm13n6kqQEn85qOAg-baXbUa1oFxTlylWAJIO-5NQeqfkt-IMn5tRN7_srTt/exec",
     ENDPOINTS: []
@@ -40,4 +40,14 @@ export const MAPPER_DATETIME_UNITS = {
 
 export const DATETIME_UNITS = Object.keys(MAPPER_DATETIME_UNITS);
 
-export const DEFAULT_MESSAGE = "Urgente, necesito detalles de la boda, me muerooo"
+export const DEFAULT_MESSAGE = "Urgente, necesito detalles de la boda, me muerooo";
+
+export const DEFAULT_FORM_DATA = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  relationship: "",
+  attendingCeremony: false,
+  attendingParty: false,
+  attendingBoth: false
+}
