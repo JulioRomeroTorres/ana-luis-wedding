@@ -1,3 +1,5 @@
+import type { HorizontalOrientation } from "./entities/TimelineItemProps";
+
 export const WEDDING_DAY = "2025-10-25T18:00:00";
 export const DEFAULT_HEADERS = {
                                   "Content-Type": "text/plain"
@@ -58,3 +60,5 @@ export const DEFAULT_WEDDING_EVENT_INFORMATION = {
   details: 'Ven a celebrar con nosotros nuestro día especial!',
   location: 'Plaza Principal, Ciudad Ejemplo'
 };
+
+export const HORIZONTAL_ORIENTATION_LIST: HorizontalOrientation[]  = ["right", "left"]
