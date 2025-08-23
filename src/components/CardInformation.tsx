@@ -20,9 +20,6 @@ const handleMapClick = ({ desktopUrl, mobileUrl }: MapLinkProps) => {
   window.open(urlToOpen, '_blank');
 };
 
-const openPopup = () => {
-  
-}
 
 export const CardInforation: React.FC<CardInforationProps> = (args: CardInforationProps ) => {
   const { title, type, informationList, icon, desktopUrl, mobileUrl } = args;

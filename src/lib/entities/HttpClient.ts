@@ -14,6 +14,7 @@ export class HttpClient {
 	}
 	
 	async post(endPoint: string, payload: any): Promise<any> {
+		console.log(`headers ${this.headers}`)
 		try {
 			const totalUrl =  endPoint ? `${this.baseUrl}/${endPoint}` : this.baseUrl;
 			console.log("HttpClient", JSON.stringify({payload}))

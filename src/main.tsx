@@ -7,7 +7,7 @@ import { Welcome } from './components/Welcome.tsx'
 import { PhotoCarousel } from './components/PhotoCarousel.tsx'
 import { DateSection } from './components/DateSection.tsx'
 import { InfoCards } from './components/CardsInformationWrapper.tsx'
-import { Schedule } from './components/Schedule.tsx'
+import { Timeline } from './components/Timeline.tsx'
 import { Rewards } from './components/Rewards.tsx'
 import { CouplePhoto } from './components/CouplePhoto.tsx'
 import { PlayList } from './components/PlayList.tsx'
@@ -21,7 +21,7 @@ createRoot(document.getElementById('root')!).render(
     <PhotoCarousel />
     <DateSection />
     <InfoCards />
-    <Schedule />
+    <Timeline />
     <Countdown />
     <Rewards />
     <CouplePhoto />

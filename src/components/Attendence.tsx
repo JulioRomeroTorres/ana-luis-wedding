@@ -1,10 +1,6 @@
 import { useState } from "react";
 import { ConfirmAttendence } from "./ConfirmAttendence";
 
-const handleConfirmAttendance = () => {
-
-}
-
 export const Attendance = () => { 
 
   const [isOpen, setIsOpen] = useState(false);

@@ -1,6 +1,6 @@
 import type { CardInforationProps } from "../lib/entities/CardInforationProps"
 import { CardInforation } from "./CardInformation"
-import { FaMapMarkerAlt, FaClock, FaRing } from "react-icons/fa";
+import { FaMapMarkerAlt, FaClock } from "react-icons/fa";
 import { GiPartyPopper } from "react-icons/gi";
 import { FaMale, FaFemale } from "react-icons/fa";
 import { FaPersonHalfDress } from "react-icons/fa6";

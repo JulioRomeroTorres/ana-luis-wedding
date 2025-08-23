@@ -1,5 +1,3 @@
-import { WEDDING_DAY_STRING } from "../lib/Constants"
-
 export const DateSection = () => {
   
   return (

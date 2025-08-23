@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { CounterDown, type DateTimeParameters } from "../lib/entities/CounterDown";
-import { DATETIME_UNITS, MAPPER_DATETIME_UNITS, WEDDING_DAY } from "../lib/Constants";
+import { MAPPER_DATETIME_UNITS, WEDDING_DAY } from "../lib/Constants";
 
 type TimeUnit = keyof typeof MAPPER_DATETIME_UNITS;
 
