@@ -15,7 +15,7 @@ export const Contact = () => {
       onClick={ () => handlerContactButton({
         phoneNumber: `${PERUVIN_PREFIX}${YAPE_PHONE_NUMBER}`
       })}
-      > {`¡Contáctanos! ;)`}  </button>
+      > {`¡Contáctanos!`}  </button>
     </div>
   )
 }

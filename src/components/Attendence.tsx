@@ -13,7 +13,7 @@ export const Attendance = () => {
       <h2>Confirma tu asistencia</h2>
       <p>Déjanos saber si contaremos con tu presencia para este día tan especial</p>
       <button className="attendance-button" onClick={openPopup} >
-        {`Confírmanos ;)`}
+        {`Confírmanos`}
       </button>
 
       {
