@@ -8,7 +8,7 @@ export const DateSection = () => {
       <div className="date-section-main">
         <div className="date-section-left">
           <span className="weekday">SÁBADO</span>
-          <span className="month">AGOSTO</span>
+          <span className="month">OCTUBRE</span>
         </div>
 
         <div className="date-section-day">
