@@ -62,3 +62,5 @@ export const DEFAULT_WEDDING_EVENT_INFORMATION = {
 };
 
 export const HORIZONTAL_ORIENTATION_LIST: HorizontalOrientation[]  = ["right", "left"]
+
+export const WELCOME_VIDEO_URL = "https://storage.googleapis.com/immobai-images/realestateprojects/Miraflores/asset/Welcome_Wedding.mp4";
