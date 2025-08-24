@@ -15,7 +15,7 @@ export const EventReservation = () => {
       <button 
         className="calendar-button" onClick = {() => handleRedirectLinkClick({
           desktopUrl: calendUrl,
-          mobileUrl: ""
+          mobileUrl: calendUrl
         })}
        > No te olvides, te esperamos </button>
     </div>
