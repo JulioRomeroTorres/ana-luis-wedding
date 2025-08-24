@@ -28,8 +28,8 @@ export const Rewards = () => {
               <div className="popup-content-description"
               >
                 <p> Aceptamos transferencias bancarias a nuestra cuenta BCP, esto nos ayudaría bastante: </p>
-                <p> - Número de cuenta en soles: 5154083434026</p><br/>
-                <p> - Número de cuenta interbancario: 00251500408343402653</p><br/>
+                <p> - Número de cuenta en soles: 5154083434026</p>
+                <p> - Número de cuenta interbancario: 00251500408343402653</p>
                 <p>Aunque, también acaptamos yapes a este número 🤑 : {YAPE_PHONE_NUMBER}</p>
               </div>
               <button className="close-popup-button" onClick={closePopup}>

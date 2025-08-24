@@ -881,14 +881,16 @@ button:focus-visible {
   border-radius: 16px;
   max-width: 300px;
   width: 90%;
+  max-height: 40vh; 
   font-family: var(--font-secondary);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   color: var(--color-primary);
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
 }
 
 .popup-content-description p {
-  font-size: 0.8em;
+  font-size: min(2vw, 0.8em);
 }
 
 .reward-popup-overlay {
