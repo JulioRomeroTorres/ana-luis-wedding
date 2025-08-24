@@ -1,25 +1,6 @@
 import React, { useState } from "react";
 import type { CardInforationProps } from "../lib/entities/CardInforationProps";
-
-export interface MapLinkProps {
-  desktopUrl: string;
-  mobileUrl: string;
-}
-
-const handleMapClick = ({ desktopUrl, mobileUrl }: MapLinkProps) => {
-  const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
-
-  const urlToOpen = isMobile ? mobileUrl : desktopUrl;
-
-  if (!urlToOpen) return;
-
-  if (isMobile) {
-    window.location.href = urlToOpen;
-    return 
-  }
-  window.open(urlToOpen, '_blank');
-};
-
+import { handleRedirectLinkClick } from "./Common";
 
 export const CardInforation: React.FC<CardInforationProps> = (args: CardInforationProps ) => {
   const { title, type, informationList, icon, desktopUrl, mobileUrl } = args;
@@ -50,7 +31,7 @@ export const CardInforation: React.FC<CardInforationProps> = (args: CardInforati
         
         {
           isLocation && (
-            <button className="info-button" onClick={ () => handleMapClick({
+            <button className="info-button" onClick={ () => handleRedirectLinkClick({
               desktopUrl, mobileUrl
             })}>
           Ver referencia

@@ -1,4 +1,4 @@
-import { DEFAULT_WEDDING_EVENT_INFORMATION } from "../Constants";
+import { CALENDAR_URL, DEFAULT_WEDDING_EVENT_INFORMATION } from "../Constants";
 
 export class CalendarEvent {
   private readonly eventEntities: Record<string, any>;
@@ -13,7 +13,7 @@ export class CalendarEvent {
 
   getLink(): string {
     
-    let baseLink = `https://calendar.google.com/calendar/render?action=TEMPLATE`;
+    let baseLink = CALENDAR_URL;
 
     Object.keys(this.eventEntities).forEach(keyEvent => {
       baseLink = `${baseLink}&${keyEvent}=${encodeURIComponent(this.eventEntities[keyEvent])}`

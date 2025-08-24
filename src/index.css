@@ -786,7 +786,7 @@ button:focus-visible {
 .reward-container {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 250px;
 }
 
 .reward-container h2 {
@@ -846,4 +846,55 @@ button:focus-visible {
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+.event-reservation-container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3%; 
+}
+
+.event-reservation-container h1{
+  font-size: 2em;
+}
+
+.calendar-button {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.reward-popup-content {
+  position: relative;
+  background-color: var(--color-background);
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 300px;
+  width: 90%;
+  font-family: var(--font-secondary);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: var(--color-primary);
+  display: flexbox;
+}
+
+.popup-content-description p {
+  font-size: 0.8em;
+}
+
+.reward-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
 }
