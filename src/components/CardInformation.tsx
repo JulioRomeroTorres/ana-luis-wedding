@@ -31,7 +31,7 @@ export const CardInforation: React.FC<CardInforationProps> = (args: CardInforati
         
         {
           isLocation && (
-            <button className="info-button" onClick={ () => handleRedirectLinkClick({
+            <button className="home-button info-button" onClick={ () => handleRedirectLinkClick({
               desktopUrl, mobileUrl
             })}>
           Ver referencia
@@ -40,7 +40,7 @@ export const CardInforation: React.FC<CardInforationProps> = (args: CardInforati
 
       {
         isDressCode && (
-          <button className="open-popup-button" onClick={openPopup}>
+          <button className="home-button info-button" onClick={openPopup}>
             Ver Dress Code
           </button>
         )

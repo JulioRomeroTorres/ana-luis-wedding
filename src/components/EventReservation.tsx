@@ -13,7 +13,7 @@ export const EventReservation = () => {
       <h1>Reserva nuestra fecha</h1>
       <MdOutlineCalendarMonth />
       <button 
-        className="calendar-button" onClick = {() => handleRedirectLinkClick({
+        className="home-button calendar-button" onClick = {() => handleRedirectLinkClick({
           desktopUrl: calendUrl,
           mobileUrl: calendUrl
         })}

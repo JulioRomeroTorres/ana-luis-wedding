@@ -18,7 +18,7 @@ export const Rewards = () => {
             será recibido con inmensa gratitud para nuestro nuevo \n hogar.`
           }
       </p>
-      <button className="reward-button" onClick={openPopup}>
+      <button className="home-button reward-button" onClick={openPopup}>
           Ver Datos Bancarios
       </button>
         {

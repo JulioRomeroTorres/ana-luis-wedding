@@ -31,6 +31,18 @@ body {
   display: none;
 }
 
+.home-button {
+  background-color: var(--color-background);
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.home-button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-background); 
+  border-color: var(--color-primary);
+}
+
 .photo-card {
   flex: 0 0 auto;
   width: 250px;
@@ -91,6 +103,11 @@ body {
 .arrow:hover {
   transform: translateY(-50%) scale(1.1);
   opacity: 0.9;
+}
+
+.arrow:focus,
+.arrow:focus-visible {
+  outline: none;
 }
 
 .arrow-left {
@@ -255,6 +272,7 @@ body {
   animation: fadeSlideUp 0.5s ease forwards;
   animation-delay: var(--animation-delay); 
   transition: transform 0.2s ease;
+  justify-content: space-between;
 }
 
 .card-information:hover {
@@ -275,6 +293,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.info-row {
+  margin-bottom: 0.5rem;
+}
+
 .info-item {
   display: flex;
   align-items: center;
@@ -284,8 +306,9 @@ body {
 
 .info-icon {
   color: #8D5E50;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   flex-shrink: 0;
+  margin-right: 0.2rem;
 }
 
 .info-text {
@@ -309,22 +332,12 @@ body {
   background-color: #8D5E50;
 }
 
-
 .info-button {
-  background-color: var(--color-background);
-  color: var(--color-primary);
-  border: 2px solid var(--color-primary);
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.info-button:hover {
-  background-color: var(--color-primary);
-  color: var(--color-background); 
-  border-color: var(--color-primary);
 }
 
 
@@ -517,9 +530,6 @@ body {
 }
 
 .attendance-button{
-  background-color: var(--color-background);
-  color: var(--color-primary);
-  border: 2px solid var(--color-primary);
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   font-weight: 500;
@@ -812,22 +822,29 @@ button:focus-visible {
 
 .reward-button {
   padding: 0.8rem 1.4rem;
-  background-color: var(--color-background);
-  border: 2px solid var(--color-primary);
-  color: var(--color-primary);
   font-family: var(--font-secondary);
   font-weight: 600;
   border-radius: 12px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .welcome-container h1 {
+  /*
   font-family: var(--font-primary);
   font-size: 2em; 
-  /*margin-bottom: 5%;*/
+  margin-bottom: 5%;
+  */
 }
 
+.text-names {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4em;
+}
+
+.text-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+}
 
 .welcome-container {
   width: 100%;
@@ -864,9 +881,6 @@ button:focus-visible {
 }
 
 .calendar-button {
-  background-color: var(--color-background);
-  color: var(--color-primary);
-  border: 2px solid var(--color-primary);
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   font-weight: 500;

@@ -154,7 +154,7 @@ export const ConfirmAttendence = ({onClose}: ConfirmAttendenceProps) => {
 
         <button
           type="submit"
-          className="info-button"
+          className="home-button info-button"
           disabled={isSubmitting}
         >
           {isSubmitting ? "Enviando..." : "Enviar"}
