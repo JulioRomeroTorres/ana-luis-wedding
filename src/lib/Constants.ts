@@ -63,7 +63,7 @@ export const DEFAULT_WEDDING_EVENT_INFORMATION = {
 
 export const HORIZONTAL_ORIENTATION_LIST: HorizontalOrientation[]  = ["right", "left"]
 
-export const WELCOME_VIDEO_URL = "https://storage.googleapis.com/immobai-images/realestateprojects/Miraflores/asset/Welcome_Wedding.mp4";
+export const WELCOME_VIDEO_URL = "https://storage.googleapis.com/immobai-images/realestateprojects/Miraflores/asset/welcome.mp4" //https://storage.googleapis.com/immobai-images/realestateprojects/Miraflores/asset/Welcome_Wedding.mp4";
 
 export const CALENDAR_URL = "https://calendar.google.com/calendar/render?action=TEMPLATE";
 

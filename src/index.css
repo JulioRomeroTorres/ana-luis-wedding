@@ -829,11 +829,22 @@ button:focus-visible {
   transition: background-color 0.3s ease;
 }
 .welcome-container h1 {
+  /*
   font-family: var(--font-primary);
   font-size: 2em; 
-  /*margin-bottom: 5%;*/
+  margin-bottom: 5%;
+  */
 }
 
+.text-names {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4em;
+}
+
+.text-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+}
 
 .welcome-container {
   width: 100%;
