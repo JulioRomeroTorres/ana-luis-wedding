@@ -93,6 +93,11 @@ body {
   opacity: 0.9;
 }
 
+.arrow:focus,
+.arrow:focus-visible {
+  outline: none;
+}
+
 .arrow-left {
   left: 0.5rem;
 }
