@@ -260,6 +260,7 @@ body {
   animation: fadeSlideUp 0.5s ease forwards;
   animation-delay: var(--animation-delay); 
   transition: transform 0.2s ease;
+  justify-content: space-between;
 }
 
 .card-information:hover {
@@ -280,6 +281,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.info-row {
+  margin-bottom: 0.5rem;
+}
+
 .info-item {
   display: flex;
   align-items: center;
@@ -289,8 +294,9 @@ body {
 
 .info-icon {
   color: #8D5E50;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   flex-shrink: 0;
+  margin-right: 0.2rem;
 }
 
 .info-text {

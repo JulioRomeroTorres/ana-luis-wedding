@@ -40,7 +40,7 @@ export const CardInforation: React.FC<CardInforationProps> = (args: CardInforati
 
       {
         isDressCode && (
-          <button className="open-popup-button" onClick={openPopup}>
+          <button className="info-button" onClick={openPopup}>
             Ver Dress Code
           </button>
         )
