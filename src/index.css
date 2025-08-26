@@ -269,13 +269,16 @@ body {
 
 
 @media (max-width: 768px) {
+  .date-section-main {
+    gap: 2vw;
+  }
   .date-section-left,
   .date-section-right {
-    gap: 0.1rem;
-    font-size: 1.3em;
+    gap: 2vw;
+    font-size: 6vw;
   }
   .date-section-day {
-    font-size: 3rem;
+    font-size: 8vw;
   }
 }
 

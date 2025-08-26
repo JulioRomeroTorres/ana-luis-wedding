@@ -16,8 +16,8 @@ export const DateSection = () => {
 
         <div className="date-section-right">
           <span className="month">OCTUBRE</span>
-          {/*<span className="time">17:00 HRS.</span>*/}
-          <span className="year">2025</span>
+          {/*<span className="time">17:00 HRS.</span>
+          <span className="year">2025</span>*/}
         </div>
       </div>
 
