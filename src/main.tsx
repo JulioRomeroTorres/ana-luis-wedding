@@ -9,10 +9,8 @@ import { InfoCards } from './components/CardsInformationWrapper.tsx'
 import { Timeline } from './components/timeline/Timeline.tsx'
 import { Rewards } from './components/Rewards.tsx'
 import { CouplePhoto } from './components/CouplePhoto.tsx'
-import { EventReservation } from './sections/EventReservation.tsx'
 import { Attendance } from './components/Attendence.tsx'
 import { Contact } from './components/Contact.tsx'
-import { CountdownSection } from './sections/CountdownSection.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
