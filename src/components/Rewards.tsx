@@ -10,9 +10,9 @@ export const Rewards = () => {
 
   return (
     <div className="reward-container">
-      <h2>Lista de regalos</h2>
+      <h2 className="text-section-title">Lista de regalos</h2>
       <div className = "reward-description">
-        <p>
+        <p className="text-section-description">
           {`
             Su presencia es nuestro mayor regalo, si desean \n acompañarnos también con un detalle,\n
             será recibido con inmensa gratitud para nuestro nuevo \n hogar.`

@@ -31,6 +31,15 @@ body {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .carousel-container {
+    padding: 1rem;
+    gap: 1rem;
+    padding: 0 3rem; 
+  }
+}
+
+
 .home-button {
   background-color: var(--color-background);
   border: 2px solid var(--color-primary);
@@ -46,11 +55,11 @@ body {
 .photo-card {
   flex: 0 0 auto;
   width: 100%;
-  /*width: 250px;
+  width: 250px;
   height: 350px;
   margin-right: 1rem;
   border-radius: 12px;
-  */
+  
   padding: 0 8px; /* separacion entre fotos */
   box-sizing: border-box;
   overflow: hidden;
@@ -66,6 +75,16 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+
+  .photo-card {
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+    border-radius: 0px;
+  }
 }
 
 .photo-card.hovered {
@@ -207,6 +226,7 @@ body {
   color: #8D5E50;
   margin: 3rem auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -837,13 +857,13 @@ button:focus-visible {
   margin: 40px auto; 
 }
 
-.reward-container h2 {
+.text-section-title {
   font-family: var(--font-primary);
   font-size: 2.5em;
   margin: 0px;
 }
 
-.reward-container p {
+.text-section-description {
   /* font-size: min(3vw, 1em); */
   font-size: 1em;
   margin-top: max(20px, 5%);
@@ -854,6 +874,7 @@ button:focus-visible {
   text-align: center;
   width: 50%;
   height: 50%; 
+  margin: auto;
   /*position: absolute;
   top: 35%;
   left: 50%;

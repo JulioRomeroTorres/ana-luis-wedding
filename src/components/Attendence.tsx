@@ -10,8 +10,8 @@ export const Attendance = () => {
 
   return (
     <div className="attendance-wrapper">
-      <h2>Confirma tu asistencia</h2>
-      <p>Déjanos saber si contaremos con tu presencia para este día tan especial</p>
+      <h2 className="text-section-title">Confirma tu asistencia</h2>
+      <p className="text-section-description">Déjanos saber si contaremos con tu presencia para este día tan especial</p>
       <button className="home-button attendance-button" onClick={openPopup} >
         {`Confírmanos`}
       </button>
