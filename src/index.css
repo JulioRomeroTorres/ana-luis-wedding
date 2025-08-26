@@ -3,7 +3,7 @@
   --color-secondary: #A47864;
   --color-accent: #E5C8B7;
   --color-beige: #E7D5C4;
-  --color-background: #F4EEE2;
+  --color-background: #f0eadc;/* #F4EEE2;*/
 
   --font-primary: 'Pinyon Script', cursive;
   --font-secondary: 'Montserrat', sans-serif;
@@ -20,11 +20,11 @@ body {
 .carousel-container {
   display: flex;
   overflow-x: auto;
-  padding: 1rem;
   scroll-behavior: smooth;
-  gap: 1rem;
   scrollbar-width: none; /* Firefox */
-  padding: 0 3rem; 
+  /*padding: 1rem;
+  gap: 1rem;
+  padding: 0 3rem; */
 }
 
 .carousel-container::-webkit-scrollbar {
@@ -45,11 +45,15 @@ body {
 
 .photo-card {
   flex: 0 0 auto;
-  width: 250px;
+  width: 100%;
+  /*width: 250px;
   height: 350px;
   margin-right: 1rem;
-  overflow: hidden;
   border-radius: 12px;
+  */
+  padding: 0 8px; /* separacion entre fotos */
+  box-sizing: border-box;
+  overflow: hidden;
   transition: transform 0.3s ease, opacity 0.3s ease;
   cursor: pointer;
   position: relative;
@@ -61,6 +65,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 .photo-card.hovered {
@@ -120,7 +125,8 @@ body {
 
 @media (max-width: 768px) {
   .arrow {
-    display: none;
+    color: white;
+    font-size: 3rem;
   }
 }
 
@@ -175,7 +181,7 @@ body {
 }
 
 .countdown-label {
-  font-size: min(1.5vw, 0.9rem);
+  font-size: min(2.5vw, 0.9rem);
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   margin-top: 0.3rem;
@@ -483,6 +489,16 @@ body {
   color: #A47864;
   margin-bottom: 2rem;
   text-transform: uppercase;
+}
+
+.contact-container img {
+  width: 30%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  margin: 5rem auto;
 }
 
 .contact-container h2 {
@@ -797,15 +813,18 @@ button:focus-visible {
   position: relative;
   width: 100%;
   height: 250px;
+  margin: 40px auto; 
 }
 
 .reward-container h2 {
   font-family: var(--font-primary);
-  font-size: 2em;
+  font-size: 2.5em;
+  margin: 0px;
 }
 
 .reward-container p {
-  font-size: min(3vw, 1em);
+  /* font-size: min(3vw, 1em); */
+  font-size: 1em;
   margin-top: max(20px, 5%);
 }
 
@@ -814,10 +833,16 @@ button:focus-visible {
   text-align: center;
   width: 50%;
   height: 50%; 
-  position: absolute;
+  /*position: absolute;
   top: 35%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
+}
+
+@media (max-width: 768px) {
+  .reward-description {
+    width: 100%;
+  }
 }
 
 .reward-button {
@@ -837,7 +862,7 @@ button:focus-visible {
 }
 
 .text-names {
-  font-family: 'Great Vibes', cursive;
+  font-family: var(--font-primary);/*'Great Vibes', cursive;*/
   font-size: 4em;
 }
 
@@ -888,6 +913,15 @@ button:focus-visible {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.calendar-button-content {
+  gap: 1vh;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 .reward-popup-content {
   position: relative;
   background-color: var(--color-background);
@@ -904,7 +938,7 @@ button:focus-visible {
 }
 
 .popup-content-description p {
-  font-size: min(3vw, 0.8em);
+  /* font-size: min(3vw, 0.8em); */
 }
 
 .reward-popup-overlay {

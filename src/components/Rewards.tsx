@@ -10,7 +10,7 @@ export const Rewards = () => {
 
   return (
     <div className="reward-container">
-      <h2>Nuestros regalos</h2>
+      <h2>Lista de regalos</h2>
       <div className = "reward-description">
         <p>
           {`
@@ -19,7 +19,7 @@ export const Rewards = () => {
           }
       </p>
       <button className="home-button reward-button" onClick={openPopup}>
-          Ver Datos Bancarios
+          Datos Bancarios
       </button>
         {
         isOpen && (
