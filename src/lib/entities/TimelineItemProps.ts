@@ -4,4 +4,5 @@ export interface TimelineItemProps {
   description: string;
   date: string;
   orientation?: HorizontalOrientation;
+  icon?: React.ReactNode;
 }

@@ -6,9 +6,18 @@ const handlerContactButton = (args: ContactInformation) => {
   window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, "_blank");
 }
 
+const [ logoPhoto ] = Object.values(
+    import.meta.glob(`/src/assets/photos/logo.png`, {
+      query: '?url',
+      import: 'default',
+      eager: true
+    })
+  ) as string[];
+
 export const Contact = () => {
   return (
     <div className="contact-container">
+      <img src = {logoPhoto} alt = "logo-photo-ana-luis" />
       <p>No dudes en contactarnos si tienes alguna duda</p>
       <button 
       className="contact-container-button"
