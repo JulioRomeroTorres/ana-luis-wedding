@@ -86,7 +86,7 @@ export const ConfirmAttendence = ({onClose}: ConfirmAttendenceProps) => {
       switchValue: "party"
     },
     {
-      title: "Asistiré a la Ambos (Terrible lo que pasara)",
+      title: "Asistiré a la Ambos",
       checkedValue: formData.attendingBoth, 
       voidFunction: setWithPreviousValue,
       valueFormData: {
