@@ -806,6 +806,10 @@ button:focus-visible {
   background-color: var(--color-background);
 }
 
+.timeline-description {
+  margin: 0px;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1008,8 +1012,4 @@ button:focus-visible {
   justify-content: center;
   align-items: center;
   z-index: 999;
-}
-
-.timeline-description {
-  margin: none;
 }
