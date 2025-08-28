@@ -482,6 +482,7 @@ body {
 }
 
 .dress-images {
+  
   display: flex;
   gap: 2rem;
   justify-content: center;
@@ -489,6 +490,7 @@ body {
 }
 
 .dress-item {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -496,7 +498,7 @@ body {
 }
 
 .dress-item img {
-  width: 150px;
+  width: 320px;
   height: auto;
   border-radius: 12px;
   object-fit: cover;

@@ -19,7 +19,17 @@ export const InfoCards = () => {
       informationList: [
         {
           icon: <FaMapMarkerAlt />,
-          text: "Parroquia del Santuario Arquidiocesano del Corazón de Jesús – San Pedro"
+          text: (    <>
+      Parroquia del Santuario Arquidiocesano del Corazón de Jesús – San Pedro
+      <br />
+      <span style={{ fontStyle: "italic", fontSize: "0.9rem" }}>
+        Presidida por 
+        <br />
+        Monseñor Juan Jose Salaverry Villarreal
+      <br />
+        Obispo Auxiliar de Lima
+      </span>
+    </>)
         },
         {
           icon: <FaClock />,
@@ -45,19 +55,27 @@ export const InfoCards = () => {
       ]
     },
     {
-      title: "Dress code",
+      title: (
+    <>
+      Código de vestimenta
+      <div style={{ marginTop: "1px", fontSize: "20px", fontStyle: "italic", fontWeight: "600" }}>
+        Formal
+      </div>
+    </>
+  ),   
       type: "dressCode",
       icon: <FaPersonHalfDress />,
       desktopUrl: "",
       mobileUrl: "",
       informationList: [
+        
         {
           icon: <FaMale />,
           text: "Vestido Largo (evitar el color blanco o similares)"
         },
         {
           icon: <FaFemale/>,
-          text: "Terno (evitar el color beige)"
+          text: "Terno (evitar el color beige o similares)"
         },
       ]
     }

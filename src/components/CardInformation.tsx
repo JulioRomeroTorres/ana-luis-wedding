@@ -53,12 +53,8 @@ export const CardInforation: React.FC<CardInforationProps> = (args: CardInforati
               <h2>Dress Code</h2>
               <div className="dress-images">
                 <div className="dress-item">
-                  <img src="./vite.svg" alt="Vestimenta Hombre" />
-                  <p>Evitar blanco</p>
-                </div>
-                <div className="dress-item">
-                  <img src="./vite.svg" alt="Vestimenta Mujer" />
-                  <p>Evitar beige</p>
+                  <img src="./colores.svg" alt="Vestimenta Hombre" />
+                  <p>Vestimenta Prohibida</p>
                 </div>
               </div>
               <button className="close-popup-button" onClick={closePopup}>

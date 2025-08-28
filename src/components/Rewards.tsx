@@ -14,8 +14,10 @@ export const Rewards = () => {
       <div className = "reward-description">
         <p className="text-section-description">
           {`
-            Su presencia es nuestro mayor regalo, si desean \n acompañarnos también con un detalle,\n
-            será recibido con inmensa gratitud para nuestro nuevo \n hogar.`
+            Su presencia es nuestro mayor regalo, \n 
+            si desean acompañarnos con un detalle, \n
+            lo recibiremos con inmensa gratitud \n 
+            para nuestro nuevo hogar.`
           }
       </p>
       <button className="home-button reward-button" onClick={openPopup}>
@@ -27,13 +29,11 @@ export const Rewards = () => {
             <div className="reward-popup-content" onClick={e => e.stopPropagation()}>
               <div className="popup-content-description"
               >
-                <p> Aceptamos transferencias bancarias a nuestra cuenta BCP, esto nos ayudaría bastante: </p>
-                <p> - Número de cuenta en soles: 5154083434026</p>
-                <p> - Número de cuenta interbancario: 00251500408343402653</p>
-                <p>También acaptamos yapes a este número 🤑 : {YAPE_PHONE_NUMBER}</p>
+                <p> Aceptamos transferencias bancarias a nuestra cuenta AGORA </p>
+                <p> Número de cuenta en soles: 094-00131000366310-6-52</p>
+                <p>También aceptamos yape a este número: {YAPE_PHONE_NUMBER}</p>
               </div>
               <button className="close-popup-button" onClick={closePopup}>
-                x
               </button>
             </div>
         </div>
