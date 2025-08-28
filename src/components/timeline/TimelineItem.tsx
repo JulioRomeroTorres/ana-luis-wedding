@@ -9,7 +9,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
   return (
     <div className={`timeline-item ${orientation}`}>
       <div className="timeline-content">
-        <p>{description}</p>
+        <p className="timeline-description">{description}</p>
         <span className="timeline-date">{date}</span>
       </div>
     </div>

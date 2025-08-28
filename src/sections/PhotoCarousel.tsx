@@ -25,7 +25,7 @@ export const CarouselSection: React.FC = () => {
   };
 
   const imageList = Object.values(
-    import.meta.glob(`/src/assets/photos/carrousel/photo_*.jpeg`, {
+    import.meta.glob(`/src/assets/photos/carrousel/photo_*.webp`, {
       query: "?url",
       import: "default",
       eager: true,

@@ -1009,3 +1009,7 @@ button:focus-visible {
   align-items: center;
   z-index: 999;
 }
+
+.timeline-description {
+  margin: none;
+}
