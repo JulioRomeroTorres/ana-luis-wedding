@@ -25,6 +25,7 @@ export const Welcome = () => {
   return (
     <div className="welcome-container">
       <h1 className="text-names">Analucía y Alonso</h1>
+      <img className="logotipo-img" src = {logoPhoto} alt = "logo-photo-ana-luis" />
       <h2 className="text-subtitle">¡Aquí empieza nuestra historia! </h2>
       <div className="welcome-video-container" style={{ position: "relative" }}>
         <video
