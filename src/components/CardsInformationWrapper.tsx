@@ -60,11 +60,11 @@ export const InfoCards = () => {
       informationList: [
         
         {
-          icon: <FaMale />,
+          icon: <FaFemale/>,
           text: "Vestido Largo (evitar el color blanco o similares)"
         },
         {
-          icon: <FaFemale/>,
+          icon: <FaMale />,
           text: "Terno (evitar el color beige o similares)"
         },
       ]
