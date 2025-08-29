@@ -12,9 +12,17 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--color-background);
+  
   color: var(--color-primary);
   font-family: var(--font-secondary);
+  height: 100vh;
+  background-image: url('assets/background/image.jpeg'); 
+  /* 
+  background-color: var(--color-background);
+  background-repeat: no-repeat;
+  */
+  background-size: cover;
+  background-position: center;
 }
 
 .carousel-container {
@@ -798,12 +806,12 @@ button:focus-visible {
 .timeline-item {
   position: relative;
   width: 45%;
-  padding: 20px;
+  /* padding: 20px; */
   box-sizing: border-box;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.8s ease forwards;
-  background-color: var(--color-background);
+  /* background-color: var(--color-background); */
 }
 
 .timeline-description {
@@ -819,6 +827,13 @@ button:focus-visible {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.timeline-icon {
+  font-size: 5vh;
+  text-align: center;
+  width: 70%;
+  height: 100%;
 }
 
 .timeline-item.show {
@@ -841,6 +856,7 @@ button:focus-visible {
 }
 
 .timeline-content {
+  text-align: center;
   padding: 0;
   border-radius: 0;
   box-shadow: none;
@@ -856,6 +872,7 @@ button:focus-visible {
   display: block;
   margin-top: 8px;
   font-size: 0.9rem;
+  font-weight: bold;
   color: #777;
 }
 
