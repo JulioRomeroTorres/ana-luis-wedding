@@ -247,6 +247,7 @@ body {
   letter-spacing: 0.2rem;
   color: #A47864;
   text-transform: uppercase;
+  margin: 0px;
 }
 
 .date-section-main {
@@ -552,7 +553,7 @@ body {
   border-radius: 16px;
   position: relative;
   z-index: 1;
-  margin: 1rem auto;
+  margin: 0px auto;
 }
 
 .contact-container img {
@@ -944,6 +945,7 @@ button:focus-visible {
 .text-names {
   font-family: var(--font-primary);/*'Great Vibes', cursive;*/
   font-size: 4em;
+  margin: 0px;
 }
 
 .text-subtitle {
