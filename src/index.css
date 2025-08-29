@@ -544,6 +544,17 @@ body {
   text-transform: uppercase;
 }
 
+
+.logotipo-img {
+  width: 30%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  margin: 1rem auto;
+}
+
 .contact-container img {
   width: 30%;
   height: auto;
