@@ -5,6 +5,14 @@ export const Welcome = () => {
   const videoRef = useRef<HTMLVideoElement>(null)
   const [showButton, setShowButton] = useState(true)
 
+  const [ logoPhoto ] = Object.values(
+    import.meta.glob(`/src/assets/isotipo-aa.png`, {
+      query: '?url',
+      import: 'default',
+      eager: true
+    })
+  ) as string[];
+
   const handleUnmute = () => {
     if (videoRef.current) {
       videoRef.current.muted = false
