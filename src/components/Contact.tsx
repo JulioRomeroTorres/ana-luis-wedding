@@ -7,7 +7,7 @@ const handlerContactButton = (args: ContactInformation) => {
 }
 
 const [ logoPhoto ] = Object.values(
-    import.meta.glob(`/src/assets/photos/logo.png`, {
+    import.meta.glob(`/src/assets/isotipo-aa.png`, {
       query: '?url',
       import: 'default',
       eager: true
