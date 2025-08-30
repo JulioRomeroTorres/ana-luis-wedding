@@ -9,16 +9,28 @@
   --font-secondary: 'Montserrat', sans-serif;
 }
 
+.background {
+  background-image: url("assets/background/image.jpeg");
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-size: auto;
+  position: fixed;  /* cubre toda la pantalla */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* queda detrás del contenido */
+}
+
 body {
   margin: 0;
   padding: 0;
-  
   color: var(--color-primary);
   font-family: var(--font-secondary);
   height: 100vh;
+  /* 
   background-image: url('assets/background/image.jpeg'); 
   background-repeat: repeat;
-  /* 
   background-color: var(--color-background);
   background-repeat: no-repeat;
   background-size: cover;
