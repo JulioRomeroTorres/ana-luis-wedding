@@ -11,15 +11,55 @@
 
 .background {
   background-image: url("assets/background/image.jpeg");
-  background-repeat: repeat-y;
-  background-position: top center;
-  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: fixed;  /* cubre toda la pantalla */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: -1; /* queda detrás del contenido */
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+/* Media queries para diferentes dispositivos */
+@media (max-width: 768px) {
+  .background {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .background {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .background {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Para pantallas grandes y 4K */
+@media (min-width: 1920px) {
+  .background {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Para pantallas ultra-wide */
+@media (min-width: 2560px) {
+  .background {
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 body {
@@ -27,7 +67,9 @@ body {
   padding: 0;
   color: var(--color-primary);
   font-family: var(--font-secondary);
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden; /* Evita scroll horizontal */
   /* 
   background-image: url('assets/background/image.jpeg'); 
   background-repeat: repeat;
@@ -1056,3 +1098,4 @@ button:focus-visible {
   align-items: center;
   z-index: 999;
 }
+
