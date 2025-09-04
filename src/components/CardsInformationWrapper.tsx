@@ -36,7 +36,7 @@ export const InfoCards = () => {
       informationList: [
         {
           icon: <FaMapMarkerAlt />,
-          text: "Refugio El Parral - Avenida Los Laureles Mz. K lote 4, Lurigancho-Chosica"
+          text: "Refugio El Parral - Huachipa"
         },
         {
           icon: <FaClock />,
