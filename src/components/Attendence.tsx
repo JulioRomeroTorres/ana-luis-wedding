@@ -26,7 +26,7 @@ Gracias de corazón por tu comprensión <br />
         {`Confírmanos`}
       </button>
       <p className="text-section-description">
-      <strong>Fecha máxima de confirmación: 13 de setiembre</strong><br />
+      <strong>Fecha límite de confirmación: 13 de setiembre</strong><br />
 
       </p>
       {
