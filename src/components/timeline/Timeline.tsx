@@ -14,7 +14,7 @@ export const Timeline: React.FC = () => {
   const timeLineItems: TimelineItemProps[] = [
     {
       description: "Misa",
-      date: "02:30 P.M.",
+      date: "01:45 P.M.",
       icon: photos[0],
     },
     {

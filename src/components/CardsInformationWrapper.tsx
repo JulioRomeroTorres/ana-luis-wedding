@@ -28,7 +28,7 @@ export const InfoCards = () => {
       ]
     },
     {
-      title: "Fiesta",
+      title: "Recepción",
       type: "location",
       icon: <GiPartyPopper />,
       desktopUrl: "https://www.google.com/maps/dir//Avenida+Los+Laureles+Mz.+K+lote+4,+Lurigancho-Chosica+15400/@-12.0120337,-77.0114524,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9105c581dad53c4d:0x6e440108ed545241!2m2!1d-76.9290505!2d-12.0120458?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D",

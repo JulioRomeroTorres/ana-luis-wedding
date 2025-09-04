@@ -29,19 +29,21 @@ export const Rewards = () => {
             <div className="reward-popup-content" onClick={e => e.stopPropagation()}>
               <div className="popup-content-description"
               >
-                <p> Aceptamos transferencias bancarias a nuestra cuenta AGORA </p>
-                <p> Número de cuenta en soles: 094-00131000366310-6-52</p>
-                <p>También aceptamos yape a este número: {YAPE_PHONE_NUMBER}</p>
+                <p> Aceptamos transferencias bancarias a nuestra cuenta</p>
+                <p> BANCO: FINANCIERA OH</p>
+                <p> N. Cuenta: 3100-0366-3106</p>
+                <p> CCI: 094-00131000366310-6-52</p>
+                <p> Yape o Plin: {YAPE_PHONE_NUMBER}</p>
               </div>
               <button className="close-popup-button" onClick={closePopup}>
               </button>
-            </div>
+              </div>
+          </div>
+
+          )
+        }
+
         </div>
-
-        )
-      }
-
       </div>
-    </div>
-  )
-}
+    )
+  }
