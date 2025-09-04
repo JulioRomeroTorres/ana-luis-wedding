@@ -75,7 +75,7 @@ export const ConfirmAttendence = ({onClose}: ConfirmAttendenceProps) => {
       switchValue: "ceremony"
     },
     {
-      title: "Asistiré a la fiesta",
+      title: "Asistiré a la recepción",
       checkedValue: formData.attendingParty, 
       voidFunction: setWithPreviousValue,
       valueFormData: {
@@ -86,7 +86,7 @@ export const ConfirmAttendence = ({onClose}: ConfirmAttendenceProps) => {
       switchValue: "party"
     },
     {
-      title: "Asistiré a la Ambos",
+      title: "Asistiré a ambos (Ceremonia y Recepción)",
       checkedValue: formData.attendingBoth, 
       voidFunction: setWithPreviousValue,
       valueFormData: {
