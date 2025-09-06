@@ -1002,9 +1002,46 @@ button:focus-visible {
   margin: 0px;
 }
 
+.font-script {
+  font-family: 'Great Vibes', cursive; /* o la fuente elegante que prefieras */
+  font-size: 20px; /* un poco más grande para resaltar */
+}
+
 .text-subtitle {
-  font-family: var(--font-secondary); /*'Playfair Display', serif;*/
-  font-size: 1.5em;
+   font-family: var(--font-secondary); /* 'Playfair Display', serif; */
+  font-size: 18px;        /* más pequeño que 18px */
+  font-style: italic;     /* cursiva elegante */
+  font-weight: 300;       /* ligera */
+  text-align: center;     /* centrado */
+  line-height: 1.6;       /* espacio entre líneas */
+}
+
+.parents-container {
+  font-family: 'Pinyon Script', cursive;
+  display: flex;
+  justify-content: center;
+  gap: 3rem; /* separación entre bloques */
+  margin-top: 1.5rem;
+  flex-wrap: wrap; /* por si el espacio es muy pequeño */
+}
+
+.parents-container .left,
+.parents-container .right {
+  text-align: center;   /* 🔑 centra cada nombre/apellido */
+}
+
+.first-name {
+  display: block;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.last-name {
+  display: block;
+  font-weight: 500;
+  font-size: 25px;
+  font-style: italic; /* opcional: elegante */
+  margin-bottom: 0.5rem; /* espacio entre parejas de padres */
 }
 
 .welcome-container {

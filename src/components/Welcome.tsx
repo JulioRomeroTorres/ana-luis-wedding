@@ -22,11 +22,37 @@ export const Welcome = () => {
     }
   }
 
-  return (
+  return (  
     <div className="welcome-container">
       <h1 className="text-names">Analucía y Alonso</h1>
       <img className="logotipo-img" src = {logoPhoto} alt = "logo-photo-ana-luis" />
-      <h2 className="text-subtitle">¡Aquí empieza nuestra historia! </h2>
+      <div className="bg-gray-50 p-6">
+  <p className="text-subtitle text-center">
+  En el amor de Dios y con la bendición de nuestros padres
+</p>
+
+<div className="parents-container">
+  <div className="left">
+    <span className="first-name">Juan Jaime</span>
+    <span className="last-name">Vásquez Zavala</span>
+    <br />
+    <span className="first-name">Aurelia Lupe</span>
+    <span className="last-name">Neyra del Río</span>
+  </div>
+  <div className="right">
+    <span className="first-name">Luis Alberto</span>
+    <span className="last-name">Sandoval Sandoval</span>
+    <br />
+    <span className="first-name">Ana Miryam</span>
+    <span className="last-name">Altamirano Bellido</span>
+  </div>
+</div>
+
+<p className="text-subtitle text-center mt-6">
+  Tenemos la alegría de invitarlos a celebrar el inicio de nuestra historia.
+</p>
+</div>
+      
       <div className="welcome-video-container" style={{ position: "relative" }}>
         <video
           ref={videoRef}
