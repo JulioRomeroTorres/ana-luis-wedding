@@ -25,10 +25,6 @@ Gracias de corazón por tu comprensión <br />
       <button className="home-button attendance-button" onClick={openPopup} >
         {`Confírmanos`}
       </button>
-      <p className="text-section-description">
-      <strong>Fecha límite de confirmación: 13 de setiembre</strong><br />
-
-      </p>
       {
         isOpen &&
         (
