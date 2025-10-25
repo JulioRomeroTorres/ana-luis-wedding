@@ -21,7 +21,7 @@ export class CounterDown {
   parseDatetime(): DateTimeParameters {
 
     const currentDateNumber = new Date().getTime()
-    const timeToLive = this.dateDeadline - currentDateNumber;
+    const timeToLive = this.dateDeadline - this.dateDeadline;
 
     let days = Math.floor(timeToLive / (1000 * 60 * 60 * 24));
     let hours = Math.floor((timeToLive % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
